@@ -69,8 +69,11 @@ Applies to generic files
 
 **File-rewriting fixers:**
 
-- `end-of-file-fixer`
-- `trailing-whitespace`
+- `end-of-file-fixer` (skips `.pgm`)
+- `trailing-whitespace` (skips `.pgm`)
+
+Binary `.pgm` maps (ROS map_server) are excluded, since these fixers
+would append a byte to the pixel data.
 
 ### [ruff-pre-commit](https://github.com/astral-sh/ruff-pre-commit) (v0.16.6)
 

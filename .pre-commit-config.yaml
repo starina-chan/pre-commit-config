@@ -12,7 +12,9 @@ repos:
         args: [--allow-multiple-documents]
       - id: debug-statements
       - id: end-of-file-fixer
+        exclude: \.pgm$
       - id: trailing-whitespace
+        exclude: \.pgm$
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.16.6
     hooks:
